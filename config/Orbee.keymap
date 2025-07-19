@@ -61,9 +61,9 @@
 
         layer_1_Symbol {
             bindings = <
-&kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE   &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES                                  &kp MINUS   &kp UNDERSCORE   &kp TILDE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp AT_SIGN    &kp HASH          &kp DOLLAR  &kp AMPERSAND     &kp CARET          &kp AMPERSAND    &kp COMMA      &kp PERIOD  &kp EXCLAMATION  &kp QUESTION   &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&none          &none             &none       &none             &none              &none            &kp SEMICOLON  &kp COLON   &kp SLASH        &kp BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE
+&none          &none             &none       &none             &none                                              &kp MINUS   &kp UNDERSCORE   &kp TILDE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE   &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &none            &kp COMMA      &kp PERIOD  &kp EXCLAMATION  &kp QUESTION   &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&kp AT_SIGN    &kp HASH          &kp DOLLAR  &kp PERCENT       &kp CARET          &kp AMPERSAND    &kp SEMICOLON  &kp COLON   &kp SLASH        &kp BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE
 &trans         &trans            &trans      &trans            &trans             &trans           &trans         &trans                                                            &kp PIPE
             >;
 
