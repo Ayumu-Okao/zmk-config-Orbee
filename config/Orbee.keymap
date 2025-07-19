@@ -59,7 +59,7 @@
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
-        layer_1 {
+        layer_1_Symbol {
             bindings = <
 &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE   &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES                                  &kp MINUS   &kp UNDERSCORE   &kp TILDE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp AT_SIGN    &kp HASH          &kp DOLLAR  &kp AMPERSAND     &kp CARET          &kp AMPERSAND    &kp COMMA      &kp PERIOD  &kp EXCLAMATION  &kp QUESTION   &kp LEFT_BRACKET      &kp RIGHT_BRACKET
@@ -70,7 +70,7 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_2 {
+        layer_2_Number {
             bindings = <
 &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK  &kp SLASH
 &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &trans    &kp INSERT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS     &kp PLUS
@@ -81,7 +81,7 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_3 {
+        layer_3_Fn {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &kp F7  &kp F8  &kp F9  &kp F14  &kp F15
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F12  &kp F13
