@@ -12,7 +12,15 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        Middle_Click {
+            bindings = <&mkp MCLK>;
+            key-positions = <6 7>;
+            layers = <0>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
