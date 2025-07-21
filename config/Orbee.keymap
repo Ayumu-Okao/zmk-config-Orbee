@@ -18,13 +18,13 @@
         Middle_Click {
             bindings = <&mkp MCLK>;
             key-positions = <6 7>;
-            layers = <0>;
+            layers = <7>;
         };
 
         Middle_Click2 {
             bindings = <&mkp MCLK>;
             key-positions = <33 32>;
-            layers = <7>;
+            layers = <0>;
         };
     };
 
@@ -32,7 +32,7 @@
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&to 7 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
     };
@@ -59,18 +59,18 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        layer_7_QWERTY {
             bindings = <
-&kp ESC         &kp Q             &kp L         &kp U                           &kp R                                            &mkp MB4     &mkp LCLK  &mkp RCLK  &mkp MB5  &kp P
-&kp TAB         &kp E             &kp I         &kp A                           &kp O            &trans         &kp Y            &kp K        &kp T      &kp N      &kp S     &lt 5 H
-&kp CAPS        &kp Z             &kp X         &kp C                           &kp V            &lt 6 F        &kp W            &kp G        &kp D      &kp M      &kp J     &kp B
-&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &mt LEFT_COMMAND LC(LG(SPACE))  &lt 2 LC(SPACE)  &lt 1 SPACE    &lt 3 BACKSPACE  &lt 4 ENTER                                  &kp DELETE
+&kp Q             &kp W      &kp E     &kp R                       &kp T                                            &kp Y        &kp U  &kp I  &kp O      &kp P
+&kp A             &kp S      &kp D     &kp F                       &kp G            &trans         &mkp MB5         &kt H        &kt J  &kt K  &kt L      &lt 5 ENTER
+&kp Z             &kp X      &kp C     &kp V                       &kp B            &kp TAB        &mkp MB4         &kt B        &kt N  &kt M  &mkp LCLK  &mkp RCLK
+&mt LSHFT ESCAPE  &kp LCTRL  &kp LALT  &mt LEFT_GUI LC(LG(SPACE))  &lt 2 LC(SPACE)  &lt 1 SPACE    &lt 3 BACKSPACE  &lt 4 ENTER                           &kp DEL
             >;
 
             sensor-bindings =
                 <&scroll_up_down>,
-                <&inc_dec_kp PG_DN PG_UP>,
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+                <&inc_dec_kp PAGE_DOWN PAGE_UP>,
+                <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         layer_1_Symbol {
@@ -139,18 +139,18 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_7_QWERTY {
+        default_layer {
             bindings = <
-&kp Q             &kp W      &kp E     &kp R                       &kp T                                            &kp Y        &kp U  &kp I  &kp O      &kp P
-&kp A             &kp S      &kp D     &kp F                       &kp G            &trans         &mkp MB5         &kt H        &kt J  &kt K  &kt L      &lt 5 ENTER
-&kp Z             &kp X      &kp C     &kp V                       &kp B            &kp TAB        &mkp MB4         &kt B        &kt N  &kt M  &mkp LCLK  &mkp RCLK
-&mt LSHFT ESCAPE  &kp LCTRL  &kp LALT  &mt LEFT_GUI LC(LG(SPACE))  &lt 2 LC(SPACE)  &lt 1 SPACE    &lt 3 BACKSPACE  &lt 4 ENTER                           &kp DEL
+&kp ESC         &kp Q             &kp L         &kp U                           &kp R                                            &mkp MB4     &mkp LCLK  &mkp RCLK  &mkp MB5  &kp P
+&kp TAB         &kp E             &kp I         &kp A                           &kp O            &trans         &kp Y            &kp K        &kp T      &kp N      &kp S     &lt 5 H
+&kp CAPS        &kp Z             &kp X         &kp C                           &kp V            &lt 6 F        &kp W            &kp G        &kp D      &kp M      &kp J     &kp B
+&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &mt LEFT_COMMAND LC(LG(SPACE))  &lt 2 LC(SPACE)  &lt 1 SPACE    &lt 3 BACKSPACE  &lt 4 ENTER                                  &kp DELETE
             >;
 
             sensor-bindings =
                 <&scroll_up_down>,
-                <&inc_dec_kp PAGE_DOWN PAGE_UP>,
-                <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+                <&inc_dec_kp PG_DN PG_UP>,
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
     };
 };
