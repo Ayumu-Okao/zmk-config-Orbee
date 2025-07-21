@@ -20,6 +20,12 @@
             key-positions = <6 7>;
             layers = <0>;
         };
+
+        Middle_Click2 {
+            bindings = <&mkp MCLK>;
+            key-positions = <33 32>;
+            layers = <7>;
+        };
     };
 
     macros {
@@ -131,6 +137,15 @@
             >;
 
             sensor-bindings = <&scroll_up_down>;
+        };
+
+        layer_7 {
+            bindings = <
+&kp Q      &kp W      &kp E     &kp R                       &kp T                                            &kp Y        &kp U  &kp I  &kp O      &kp P
+&kp A      &kp S      &kp D     &kp F                       &kp G            &kp ESC        &trans           &kt H        &kt J  &kt K  &kt L      &trans
+&kp Z      &kp X      &kp C     &kp V                       &kp B            &kp TAB        &trans           &kt B        &kt N  &kt M  &mkp LCLK  &mkp RCLK
+&kp LSHFT  &kp LCTRL  &kp LALT  &mt LEFT_GUI LC(LG(SPACE))  &lt 2 LC(SPACE)  &lt 1 SPACE    &lt 3 BACKSPACE  &lt 4 ENTER                           &kp DEL
+            >;
         };
     };
 };
