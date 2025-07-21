@@ -75,10 +75,10 @@
 
         layer_1_Symbol {
             bindings = <
-&trans  &kp AT_SIGN    &kp HASH          &kp DOLLAR     &kp PERCENT                                           &kp MINUS   &kp UNDERSCORE   &kp TILDE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&trans  &trans         &kp CARET         &kp AMPERSAND  &kp PIPE          &trans               &kp COMMA      &kp PERIOD  &kp EXCLAMATION  &kp QUESTION   &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&trans  &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES    &kp SEMICOLON  &kp COLON   &kp SLASH        &kp BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE
-&trans  &trans         &trans            &trans         &trans            &trans               &trans         &trans                                                            &trans
+&trans  &kp AT_SIGN  &kp HASH       &kp DOLLAR       &kp PERCENT                                &kp DOUBLE_QUOTES  &kp SEMICOLON  &kp COLON         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans  &kp CARET    &kp AMPERSAND  &kp ASTERISK     &kp PIPE      &trans       &kp MINUS       &kp SINGLE_QUOTE   &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&trans  &kp COMMA    &kp PERIOD     &kp EXCLAMATION  &kp QUESTION  &kp TILDE    &kp UNDERSCORE  &kp GRAVE          &kp SLASH      &kp BACKSLASH     &kp LEFT_BRACE        &kp RIGHT_BRACE
+&trans  &trans       &trans         &trans           &trans        &trans       &trans          &trans                                                                    &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -88,7 +88,7 @@
             bindings = <
 &trans  &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                        &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_ASTERISK  &kp KP_DIVIDE
 &trans  &trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans    &kp INSERT  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_SUBTRACT  &kp KP_PLUS
-&trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans    &kp KP_N0   &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp PERIOD       &kp KP_EQUAL
+&trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans    &kp KP_N0   &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT       &kp KP_EQUAL
 &trans  &trans        &trans        &trans        &trans        &trans    &trans      &trans                                            &trans
             >;
 
