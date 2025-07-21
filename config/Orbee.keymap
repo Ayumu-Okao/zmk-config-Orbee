@@ -146,6 +146,11 @@
 &kp Z             &kp X      &kp C     &kp V                       &kp B            &kp TAB        &mkp MB4         &kt B        &kt N  &kt M  &mkp LCLK  &mkp RCLK
 &mt LSHFT ESCAPE  &kp LCTRL  &kp LALT  &mt LEFT_GUI LC(LG(SPACE))  &lt 2 LC(SPACE)  &lt 1 SPACE    &lt 3 BACKSPACE  &lt 4 ENTER                           &kp DEL
             >;
+
+            sensor-bindings =
+                <&scroll_up_down>,
+                <&inc_dec_kp PAGE_DOWN PAGE_UP>,
+                <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
     };
 };
