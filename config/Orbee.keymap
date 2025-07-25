@@ -108,10 +108,10 @@
 
         layer_4_Arrow {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans    &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp HOME  &kp UP     &kp END
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp LEFT  &kp RIGHT  &kp RIGHT
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                               &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans          &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp HOME  &kp UP_ARROW    &kp END    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                       &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
