@@ -78,7 +78,7 @@
 &trans  &kp AT_SIGN  &kp HASH       &kp DOLLAR       &kp PERCENT                                &kp DOUBLE_QUOTES  &kp SEMICOLON  &kp COLON         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &trans  &kp CARET    &kp AMPERSAND  &kp ASTERISK     &kp PIPE      &trans       &kp MINUS       &kp SINGLE_QUOTE   &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET
 &trans  &kp COMMA    &kp PERIOD     &kp EXCLAMATION  &kp QUESTION  &kp TILDE    &kp UNDERSCORE  &kp GRAVE          &kp SLASH      &kp BACKSLASH     &kp LEFT_BRACE        &kp RIGHT_BRACE
-&trans  &trans       &trans         &trans           &trans        &trans       &trans          &trans                                                                    &trans
+&trans  &trans       &trans         &trans           &trans        &trans       &trans          &trans                                                                    &kp DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
